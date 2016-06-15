@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'angularjs-rails'
+gem 'devise'
 
 gem 'bootstrap-sass'
 gem 'sass-rails','~>5.0'
