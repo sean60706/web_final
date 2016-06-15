@@ -1,0 +1,12 @@
+
+<% if current_user %>
+	<%= link_to('login01', destroy_user_session_path, :method => :delete) %>
+	|
+	<%= link_to('chang_password02',edit_registration_path(:user)) %>
+<% else %>
+	<%= link_to('regist03', new_registration_path(:user)) %>
+
+	<%= link_to('login04', new_session_path(:user)) %>
+
+
+<% end %>
