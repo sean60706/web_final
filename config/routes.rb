@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'data/index'
+
+  get 'data/about'
+
   devise_for :users
   get 'trade/index'
   get 'trade/new'
@@ -6,7 +10,7 @@ Rails.application.routes.draw do
   get 'trade/about'
   get 'trade/login'
 
-  root 'trade#index'
+  root 'data#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
